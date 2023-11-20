@@ -6,7 +6,7 @@ import (
 )
 
 func main(){
-   var a,b int
+   var a,b float64
    var k float64
    k=0
    fmt.Println("Введите A:")
@@ -14,7 +14,7 @@ func main(){
    fmt.Println("Введите B:")
    fmt.Scan(&b)
    for i:=a; i<=b;i++{
-	k+=math.Pow10(i)
+	k+=math.Pow(float64(i),2)
    }
    fmt.Println(k)
 }
